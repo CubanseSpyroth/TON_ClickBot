@@ -1,0 +1,21 @@
+{
+  "name": "ton_clickbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "spyroth",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mysql": "^2.18.1",
+    "telegraf": "^4.16.3",
+    "telegram-keyboard": "^2.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
