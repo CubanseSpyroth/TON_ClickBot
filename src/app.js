@@ -42,8 +42,6 @@ bot.on('text', (ctx) => {
 	ctx.reply(`❌ Comando Desconocido!\n Has enviado un mensaje directamente en el chat del Bot. \nℹ️ No envíes mensajes directamente al Bot o reinicia el Menú pulsando /start`)
 })
 
-console.log('UUID v4:', uuid.v4());
-
 bot.launch()
 console.log('✅ El bot esta corriendo correctamente')
 module.exports = bot
