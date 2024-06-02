@@ -23,11 +23,18 @@ bot.start((ctx) => {
 
 bot.hears('📜 Ganar criptomonedas', (ctx) => {
 
-	const msg = `📜 Lista de Tareas \n 👀 Vistas () - 🔗 Links () - 📢 Canales ()`;
+	const msg = `Elige una opción para comenzar a ganar tu TON 👇\n\nTareas disponibles: 🖥 (0) | 📣 (0) 👀 (0) 🔗(0)`;
 
 	const keyboard = Keyboard.make([
-		Key.callback('CallBack', 'tme'),
-		Key.url('URL','https://es.quora.com/Qu%C3%A9-tal-son-los-acortadores-de-enlaces-para-ganar-dinero'),
+		[
+			Key.callback('🖥 Visitar Sitios', 'tme'),
+			Key.callback('📣 Unirse un Canal', 'tme'),
+			Key.callback('🤖 Iniciar un Bot', 'tme'),
+		
+		],[
+			Key.callback('👀 Visualizar Post', 'tme'),
+			Key.callback('🔗 Clickear Link', 'tme')
+		]
 	  ])
 
 	ctx.reply(msg, keyboard.inline());
